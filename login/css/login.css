@@ -1,0 +1,260 @@
+@charset "UTF-8";
+* {
+margin: 0;
+padding: 0;
+}
+
+
+body {
+    background-image: url("../images/preto.png");
+    background-attachment: fixed;
+    background-position: none center;
+    background-size: cover;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    overflow: hidden;
+   
+   
+}
+
+
+
+.logo {
+    width: 3.125rem;
+    height: 2.9375rem;
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left: 75%;
+    margin-top: -3em;
+
+}
+
+.logo::before {
+    font-family: Arial, Helvetica, sans-serif;
+    content: "";
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 400;
+}
+
+.logo::after{
+    font-family: Arial, Helvetica, sans-serif;
+    content: "";
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 400;
+}
+
+/* texto e links */
+/*
+  div.espacio3D1 {
+    width: 200px;
+    margin: -19em 6% 10em;
+    position: relative;
+    perspective-origin: center -50%;
+    perspective: 800px;
+    z-index: -1;
+  }
+
+  div.espacio3D2 {
+    width: 645px;
+    position: relative;
+    perspective-origin: center -50%; /*punto desde donde se coloca la cÃ¡mara*//*
+    perspective:1000px; /*area de distorsion de figura*//*
+    z-index: -2;
+    float: right;
+    margin-top: -147%;
+   
+  }
+
+  div.espacio3D3 {
+    width: 200px;
+    position: absolute;
+    perspective-origin: center -50%;
+    perspective: 1500px;
+    z-index: -3;
+    margin: auto;
+    float: left;
+    margin: -40em -72% 10em;
+  }
+ 
+  div.cubo3D {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;/* indica la perspectiva*/
+   /*
+  }
+  aside.triangulo {
+       width: 0;
+       height: 0;
+       position: absolute;  
+  }
+  
+  
+  aside.cara2 { /* centro *//*
+    transform:  rotateY(120deg) translateZ(0px) translateY(0px) rotateX(35deg);
+    border-right: 150px solid transparent;
+       border-top: 150px solid transparent;
+       border-left: 150px solid transparent;
+       border-bottom: 150px solid rgb(9 10 10 / 56%);
+  }
+  
+  aside.cara3 { /* Izquierda *//*
+    transform:  rotateY(-120deg) translateZ(0px) translateY(0px) rotateX(35deg);
+    border-right: 150px solid transparent;
+       border-top: 150px solid transparent;
+       border-left: 150px solid transparent;
+       border-bottom: 150px solid rgb(6 6 6);
+  }
+  
+  aside.cara4 { /* derecha *//*
+    transform:   rotateY(0deg) translateZ(0px) translateY(0px) rotateX(35deg);
+    border-right: 150px solid transparent;
+       border-top: 150px solid transparent;
+       border-left: 150px solid transparent;
+       border-bottom: 150px solid rgb(16 16 16 / 90%);
+  }
+  */
+  .formulario{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 20em;
+      width: 30em;
+      background-color: rgb(15, 15, 15);
+      border-radius: 10px;
+      margin-left: 60%;
+      margin-top: 15%;
+      position: relative;
+      z-index: 50000;
+      
+  }
+  .entrar{
+    width: 10em;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 40px;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0.375rem 0.75rem;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    z-index: 5;
+    color: #000;
+    background-color: #fff;
+   
+}
+.inputx  {
+  background: transparent;
+  height: 50px;
+  color: #fff!important;
+  border: 1px solid transparent;
+  background: rgba(255,255,255,.08);
+  border-radius: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  display: block;
+  position: relative;
+  width: 25rem;
+  height: calc(1.5em + 0.75rem + 2px);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;    
+  padding: 0.375rem 0.75rem;
+  margin-top: 20px;
+  outline: none;    
+}
+.inputx:hover {
+  border-color: #fff;
+}
+#cnpj {
+  margin-top: 60px;
+}
+
+.olhomagico{
+  cursor: pointer;
+  width: 18px;
+  position: absolute;
+  margin-top: 9.3rem;
+  margin-left: 70%;
+}
+  
+  @media (max-width: 1205px) {
+  .for {
+    background: rgba(209, 27, 27, 0);
+    box-shadow: 8px 8px 32px 0 rgba(37, 37, 39, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
+    height: 22em;
+    width: 32em;
+    margin: auto;
+    margin-top: 10em;
+    z-index: 4;
+    position: relative;
+  }
+  .formulario {
+    margin: auto;
+    margin-top: 3%;
+  }
+  .logo{
+    background: rgba(209, 27, 27, 0);
+    box-shadow: 8px 8px 32px 0 rgba(37, 37, 39, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
+    width: 2.2em;
+}
+}
+
+	@media (max-width:542px){
+    .for {
+      
+      width: 90%;
+      margin: auto;
+      margin-top: 9em;
+    }
+    .formulario {
+      width: 95%;
+      
+    }
+    .inputx  { 
+      width: 82%;
+    }
+    .logo {
+      margin-top: -3.5em;
+    }
+  }
+  @media not all and (min-resolution:.001dpcm) { @supports (-webkit-appearance:none) and (display:flow-root) 
+    { body { 
+      background-image: url("../images/preto.png");
+      background-attachment: local;
+      background-size: auto;
+      background-color: #fff;
+      background-repeat: repeat-y;
+    } 
+  } }
+
+
