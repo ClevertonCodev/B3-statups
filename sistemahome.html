@@ -12,9 +12,9 @@
     <title>inicial</title>
 
 </head>
-<body>
+<body class="pg1">
 	<header id="header">
-			<nav>
+			<nav id="menu">
 				<a class="logo" href="/">logo</a>
 				<div class="mobile-menu">
 				  <div class="line1"></div>
@@ -28,7 +28,6 @@
 				  <li><a href="#">Contato</a></li>
 				</ul>
 			  </nav>
-			</header>
 	  </header>
 	  
 		<div class="container">
@@ -36,19 +35,19 @@
 					<div class="glide__track" data-glide-el="track">
 					  <ul class="glide__slides">
 			
-						<li class="glide__slide">
+						<li class="glide__slide" data-glide-autoplay="6000">
 						  <img src="images/1.jpg" alt="">
 						</li>
 			
-						<li class="glide__slide">
+						<li class="glide__slide" data-glide-autoplay="6000">
 						  <img src="images/2.jpg" alt="">
 						</li>
 			
-						<li class="glide__slide">
+						<li class="glide__slide" data-glide-autoplay="6000">
 						  <img src="images/3.jpg" alt="">
 						</li>
 			
-						<li class="glide__slide">
+						<li class="glide__slide" data-glide-autoplay="6000">
 						  <img src="images/4.jpg" alt="">
 						</li>
 			
@@ -68,46 +67,29 @@
 					  </div>
 			</div>
 		</div>
+		<script src="js/menu-mobile.js"></script>	
+		<script src="js/glide.js"></script>	
+		<script>
+      		new Glide(".images",{
+        		type: 'carousel',
+        		perView: 2,
+        		focusAt: 'center',
+        		gap: 40,
+        		breakpoints: {
+          		1200:{
+            	perView: 2
+          		},
+          		800:{
+            	perView: 1
+          		},	
+        		}
+      		}).mount();
+    </script> 
 <main>
 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!
 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eos asperiores tempora numquam sint blanditiis amet et sunt illum corporis, quos molestiae ex laboriosam sequi quod voluptatum! Aliquid, deserunt deleniti!
 </main>
 
-	
-
-
-
-<script src="js/menu-mobile.js"></script>	
-<script src="js/glide.js"></script>	
-<script>
-      new Glide(".images",{
-        type: 'carousel',
-        perView: 2,
-        focusAt: 'center',
-        gap: 40,
-        breakpoints: {
-          1200:{
-            perView: 2
-          },
-          800:{
-            perView: 1
-          }
-        }
-      }).mount();
-    </script> 
-
-
-
-	
-	 
-
-
-
-	<main >
-		
-	</main> 
-	  
-	 
 <!-- footer-->
   <footer class="footer">
   
