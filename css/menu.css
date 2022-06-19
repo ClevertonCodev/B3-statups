@@ -4,7 +4,7 @@ margin: 0;
 padding: 0;
 }
 
-
+/*
 #header {
     box-sizing: border-box;
     height: 70px;
@@ -14,32 +14,67 @@ padding: 0;
     background-color: rgb(8, 8, 8);
     
   }
-  
-  #menu {
+  */
+  nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Verdana, arial, Tahoma, sans-serif;
+    background: #23232e;
+    height: 8vh;
+  }
+  
+  .nav-list {
     list-style: none;
-    gap: 0.5rem;
+    display: flex;
+  }
+  
+  .nav-list li {
     letter-spacing: 3px;
-   
-    
+    margin-left: 32px;
   }
   
-  #menu a {
-    display: block;
-    padding: 0.5rem;
-    margin-right: 32px;
-    
-  }
-  
-  
-  #btn-mobile {
+  .mobile-menu {
     display: none;
+    cursor: pointer;
   }
-  #menuhamburger{
-    display: none;
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 3px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
   }
+  
   @media (max-width: 1000px) {
-   
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 100%;
+      height: 92vh;
+      z-index: 1000;
+      background: #23232e;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+      border: 2px;
+    }
+    
+   /*
     #menu {
         position: fixed;
         flex-direction: column;
@@ -81,31 +116,35 @@ padding: 0;
       padding-left: 10px;
       transition: all 0.3s ease;
       background: scroll;
-       }
+       } */
   
   
-    #btn-mobile {
-      display: block;
-      border: none;
-      cursor: pointer;
-      width: 33px;
-      height: 1px;
-      background: none;
-      
-     
+  }
+  .nav-list.active {
+    transform: translateX(0);
+  }
   
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
     }
-    #menuhamburger {
-      display: block; 
+    to {
+      opacity: 1;
+      transform: translateX(0);
     }
-
-    #xbuger {
-      position: absolute;
-      margin-top: -1em;
-      margin-left: -2em;
-      
-    }
+  }
   
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 10px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
   }
 
   .container{
